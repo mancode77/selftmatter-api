@@ -3,6 +3,6 @@ from app.question.listQuestion import questions
 
 questions_bp = Blueprint('questions', __name__)
 
-@questions_bp.route('/getquestion', methods=['GET'])
+@questions_bp.route('/questions', methods=['GET'])
 def get_questions():
     return jsonify({'questions': questions})
